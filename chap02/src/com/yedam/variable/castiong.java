@@ -24,10 +24,12 @@ public class castiong {
 	char charVar = (char)intVar2;
 			
 	System.out.println("charVar:"+charVar);
-	}
-
 	double doubleVar = 3.14;
 	intVar2 = (int)doubleVar;
+	System.out.println(intVar2);
+	}
+
+	
 	
     
 }
