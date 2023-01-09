@@ -18,7 +18,7 @@ public class Import {
 		
 		System.out.println("hello" + name);
 		System.out.println("your age is:" + number);
-		System.out.println("You like "+food);
+		System.out.println("You likes "+food);
 
 	}
 
