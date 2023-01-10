@@ -1,5 +1,7 @@
 package com.yedam.chap01;
 
+
+
 public class OparatorCastion {
   public static void main(String[] args) {
 	byte value1= 10; 
@@ -50,6 +52,14 @@ public class OparatorCastion {
   double dValue = Double.parseDouble(str4);
   System.out.println(dValue);
 //  boolean bValue = Boolean.parseBoolean(str4);
+  
+  //int -> String 
+  String str5 = String.valueOf(valueStr);
+ //long -> String 
+  String str6 = String.valueOf(longValue);
+  //double -> String 
+  String str7 = String.valueOf(dValue);
+		  
 
 }
 }

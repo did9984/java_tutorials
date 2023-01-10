@@ -22,9 +22,12 @@ public class keyCode {
       
       Scanner input = new Scanner(System.in);
       System.out.println("What is your name?");
-      input.nextLine();
       String name = input.nextLine();
-      System.out.println("Hello "+name);
+//      input.nextLine();
+      System.out.println("Hello "+ name);
+      if (name.equals("park")) {
+		System.out.println("반갑습니다" + name);
+	}
       
       
 	}
