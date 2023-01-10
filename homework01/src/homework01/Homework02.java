@@ -79,7 +79,12 @@ public class Homework02 {
 			for (int j = 1; j <= n; j++) {
 				System.out.println(i+"*"+j+"="+i*j);
 			}
+			
 		}
+        for (int i = 2; i <= 9; i++) {
+			for (int j = 1; j <= 5; j++) {
+				System.out.print(j+"*"+i+"="+j*i+"\t");
+			}System.out.println();
 	}
     }
-
+}
