@@ -3,6 +3,8 @@ package com.yedam.loop;
 import java.util.Random;
 import java.util.Scanner;
 
+import jdk.internal.org.jline.reader.impl.DefaultParser.Bracket;
+
 public class LoopWhile {
 
 	public static void main(String[] args) {
@@ -75,7 +77,7 @@ public class LoopWhile {
 		// 10000원 ->20번
 		// 1500 - 3번
 		boolean flag = true;
-		while (money > 500 && flag) {
+		while (money >= 500 && flag) {
 			System.out.println((money / 500) + "번의 기회가 남았습니다");
 			System.out.println("1.가위바위보|2번 앞 뒤 맟추기 |3. 종료");
 			int gameNo = Integer.parseInt(sc.nextLine());
@@ -94,6 +96,7 @@ public class LoopWhile {
 					} else if (randomNo == 2) {
 						System.out.println("이겼다");
 					}
+				}
 					if (RSP.equals("rock")) {
 						if (randomNo == 1) {
 							System.out.println("비겼다");
@@ -102,32 +105,47 @@ public class LoopWhile {
 						} else if (randomNo == 2) {
 							System.out.println("이겼다");
 						}
-					if (RSP.equals("paper")) {
-						if (randomNo == 2) {
-							System.out.println("비겼다");
-						}else if (randomNo == 3) {
-							System.out.println("졌다");
-						}else if (randomNo ==1) {
-							System.out.println("이겼다");
-						} {
+					}
+						if (RSP.equals("paper")) {
+							if (randomNo == 2) {
+								System.out.println("비겼다");
+							} else if (randomNo == 3) {
+								System.out.println("졌다");
+							} else if (randomNo == 1) {
+								System.out.println("이겼다");
+							}
 						
-						} {
-							
 						}
-					}
-					}
+						money -= 500;
+						break;
 
-				}
-				money -= 500;
-				break;
+				
+			
 			case 2:
-				// 컴퓨터와 앞, 뒤 맞추기
+				System.out.println("입력: 앞 뒤");
+				String frBa = sc.nextLine();
+				int fb = number.nextInt(2)+1;
+				if (frBa.equals("앞")) {
+					if (fb==1) {
+						System.out.println("땡");
+					}else {
+						System.out.println("정답");
+					}
+				}
+				if (frBa.equals("뒤")) {
+					if (fb==2) {
+						System.out.println("땡");
+					}else {
+						System.out.println("정답");
+					}
+				}
+				money -=500;
 				break;
 			case 3:
 				// 종료... 1) 투입 금액이 소진이 다 되었을때
 				// 2) 강제 종료
 				flag = false;
-			   System.out.println("게임 종료.");
+				System.out.println("게임 종료.");
 				break;
 
 			default:
