@@ -4,6 +4,7 @@ public class Student {
 
 	// 필드 , 객체의 속성 ( 정보 , 데이터 )가 저장되는 부분
 	// 이름
+	final String schoolString = "영진";
 	String name;
 	int age;
 	String schoolName;
@@ -16,6 +17,20 @@ public class Student {
 		System.out.println("한");
 	}
 
+	Student(int age) {
+		if (age > 0) {
+			this.age = age;
+		} else {
+			this.age = 0;
+		}
+
+	}
+
+	Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
 	// 메소드 , 객체를 생성 후 기능을 사용할 때 정의하는 부분
 
 	void getInfo() {

@@ -6,7 +6,12 @@ public class MethodTest {
 		// TODO Auto-generated method stub
       StringUtil stringUtil = new StringUtil();
        stringUtil.greet();
+       Integer.parseInt(null);
        stringUtil.greet("good moning");
+       
+    long l = stringUtil.greetLength("hello");
+      System.out.println(l);
+      
 	}
 
 }
