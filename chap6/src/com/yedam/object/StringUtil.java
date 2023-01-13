@@ -6,4 +6,7 @@ public class StringUtil {
 	public void greet() {
 		System.out.println("hello");
 	}
+	public void greet(String str) {
+		System.out.println(str);
+	}
 }

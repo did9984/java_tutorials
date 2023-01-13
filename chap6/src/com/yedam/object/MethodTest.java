@@ -6,6 +6,7 @@ public class MethodTest {
 		// TODO Auto-generated method stub
       StringUtil stringUtil = new StringUtil();
        stringUtil.greet();
+       stringUtil.greet("good moning");
 	}
 
 }
