@@ -37,6 +37,13 @@ public class ProductProgram {
 			}else if(selectNo==4) {
 				int max = 0;
 				int productIndex =0;
+				for (int i = 0; i < listProducts.length; i++) {
+					Product product = listProducts[i];
+					if (max < product.getProPrice()) {
+						max = product.getProPrice();
+						productIndex =i;
+					}
+				}
 			}else if(selectNo==5) {
 				System.out.println("프로그램을 종료합니다");
 				run = false;
