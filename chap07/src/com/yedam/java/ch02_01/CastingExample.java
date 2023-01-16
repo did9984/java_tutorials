@@ -22,7 +22,7 @@ public class CastingExample {
        child2.method3();
        
        Parent pa =new Parent();
-       if (pa instanceof Child) {
+       if (pa instanceof Child) {  //강제 type 변환시 사용 
     	   Child ch = (Child)pa;
            ch.method1();
            ch.method2();
