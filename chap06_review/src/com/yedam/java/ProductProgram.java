@@ -35,8 +35,8 @@ public class ProductProgram {
 				}
 				
 			}else if(selectNo==4) {
-				int max = 0;
-				int productIndex =0;
+				int max = 0; // 가장 큰값
+				int productIndex =0; // 가장 큰값이 몇번째인지 나옴 
 				for (int i = 0; i < listProducts.length; i++) {
 					Product product = listProducts[i];
 					if (max < product.getProPrice()) {
@@ -44,6 +44,17 @@ public class ProductProgram {
 						productIndex =i;
 					}
 				}
+				
+				int sum =0;
+				for(int i=0;i<listProducts.length;i++) {
+					if (i == productIndex) 
+						continue;
+						Product product = listProducts[i];
+						sum += product.getProPrice();
+					}
+					System.out.println("최고 가격을 가진 제품은"+listProducts[productIndex].getPromName()+"입니다");
+					System.out.println("최고 가격을 제외한 제품들의 합은" +sum+"입니다.");
+				
 			}else if(selectNo==5) {
 				System.out.println("프로그램을 종료합니다");
 				run = false;
