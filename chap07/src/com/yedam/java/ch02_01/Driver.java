@@ -5,7 +5,5 @@ public class Driver {
 		vehicle.run();
 	}
 	
-	public void drive(Bus bus) {
-		bus.run();
-	}
+
 }
